@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bunny's Carrot Adventure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="gameContainer">
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <div id="instructions">
+      Use WASD or Arrow Keys to move your bunny
+    </div>
+
+    <div id="collectCounter">
+      Carrots Found: <span id="counter">0</span>/5 🥕
+    </div>
+
+    <div id="messageDialog">
+      <div id="messageText"></div>
+      <button id="continueBtn">Continue</button>
+    </div>
+
+    <div id="endingScreen">
+      <div id="endingText">
+        You've found all the carrots! 🐰🥕<br />
+        What a hoppy adventure! 💛
+      </div>
+      <button id="restartBtn">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Mobile Touch Controls -->
+  <div id="touchControls">
+    <button class="arrow" id="up">↑</button>
+    <div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
+      <button class="arrow" id="left">←</button>
+      <button class="arrow" id="down">↓</button>
+      <button class="arrow" id="right">→</button>
+    </div>
+  </div>
+
+  <!-- Game Logic -->
+  <script src="script.js"></script>
+  <!-- Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
